@@ -1,0 +1,169 @@
+@import './reset.css';
+
+body{
+    font-family: "Barlow", serif;
+    font-size: 16px;
+    background-color: #EFF6FF;
+    color: #2A4A5C;
+}
+
+.wrapper{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 100vh;
+
+    max-width: 1230px;
+    padding-block: 15px;
+    /* overflow: hidden; */
+}
+.bg{
+    /* background-color: teal; */
+    background-image: url('../img/bg.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    position: relative;
+}
+
+.logo{
+    position: absolute;
+    top: 20px;
+    left: 90px;
+}
+.form{
+    padding-top: 50px;
+    padding-inline: 50px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.get {
+}
+.get-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.get-subtitle {
+    opacity: 0.6;
+
+}
+.get-buttons {
+    margin-block: 30px;
+
+}
+.buttons-row {
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+
+	
+}
+.buttons-row_item{
+    position: relative;
+    padding: 5px 35px;
+    font-size: 13px;
+    background-color: #255A9B ;
+    color: #EEEEEE;
+
+}
+.buttons-row_item::before{
+    content: '';
+    width: 15px;
+    aspect-ratio: 1;
+    background-image: url(../img/facebook.svg);
+    position: absolute;
+    left: 5px;
+}
+
+.item-linked{
+    background-color: #0076B6;
+
+}
+.item-linked::before{
+    background-image: url(../img/linkedin.svg);
+
+}
+.hr-container{
+    position: relative;
+    margin-block: 30px;
+}
+.hr-container hr{
+    border: 0;
+    border-top: 2px solid #ccc;
+    width: 50%; 
+    margin: 0 auto;
+
+}
+.hr-container span{
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #EFF6FF;
+    padding: 0 10px;
+}
+.get-inputs{
+    margin-bottom: 30px;
+}
+.inputs-row{
+    display: flex;
+    flex-direction: row;
+    column-gap: 15px;
+}
+.inputs-row-item {
+    border: 2px solid gray;
+    padding: 10px 0 10px 5px;
+    position: relative;
+    
+
+}
+.inputs-row-item::placeholder{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.inputs-row-item-active{
+    border-left: 3px solid #3698FB;
+}
+.what-title{
+    font-size: 20px;
+    font-weight: 500;
+    color: #3698FB;
+}
+.what-subtitle{
+    opacity: 0.5;
+    margin-bottom: 30px;
+}
+.what-input-row{
+
+}
+.radio-row{
+    display: flex;
+    flex-direction: row;
+    column-gap: 30px;
+}
+.radio-row-input{
+
+}
+.what-text{
+    margin-block: 20px;
+    padding: 10px;
+    max-width: 300px;
+    box-shadow: 5px 5px 10px gray;
+}
+.what-agree{
+
+}
+.what-agree a:hover{
+    text-decoration: underline;
+}
+.form-button{
+    margin-top: 15px;
+    padding: 10px 40px;
+    background-color: #3698FB;
+    color: white;
+    align-self: flex-start;
+    border-radius: 5px;
+}
